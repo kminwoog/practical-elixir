@@ -3,6 +3,18 @@ defmodule StringConverter do
     StringConverter convert string value to proper [integer | float | string]
   """
 
+  @doc """
+    convert string to proper type  [integer | float | string]
+
+    iex> StringConverter.to_type("34")
+    34
+    iex> StringConverter.to_type(".3f")
+    0.3
+    iex> StringConverter.to_type("abc3")
+    "abc3"
+
+  """
+
   @spec to_type(String.t()) :: Integer | float() | String.t()
   def to_type(value) when is_binary(value) do
     parse_integer(Integer.parse(value), value)
@@ -11,12 +23,10 @@ defmodule StringConverter do
   @doc """
     convert string to integer
 
-    iex> Integer.parse("0")
-    {0, ""}
-    iex> Integer.parse("-1")
-    {-1, ""}
-    iex> Integer.parse("1+a")
-    {1, "+a"}
+    iex> StringConverter.to_integer("-25")
+    -25
+    iex> StringConverter.to_integer("2.4")
+    :error
   """
 
   @spec to_integer(String.t(), any()) :: Integer | any()
@@ -40,15 +50,9 @@ defmodule StringConverter do
   @doc """
     convert string to float
 
-    iex> Float.parse("0.1")
-    {0.1, ""}
-    iex> Float.parse(".1")
-    :error
-    iex> Float.parse("0.3f")
-    {0.3, "f"}
-    iex> Float.parse("0.f")
-    {0.0, ".f"}
-    iex> Float.parse(".3f")
+    iex> StringConverter.to_float("0.3f")
+    0.f
+    iex> StringConverter.to_float("3x")
     :error
   """
 

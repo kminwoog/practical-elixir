@@ -1,6 +1,6 @@
 # PracticalElixir
-
-**TODO: Add description**
+========
+![Hex.pm Version](https://img.shields.io/hexpm/v/practical  _elixir.svg)](https://hex.pm/packages/practical_elixir)
 
 ## Installation
 
