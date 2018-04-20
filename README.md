@@ -1,7 +1,6 @@
 # PracticalElixir
-
-![Hex.pm Version](https://img.shields.io/hexpm/v/practical  _elixir.svg)](https://hex.pm/packages/practical_elixir)
-
+[![Hex.pm Version](https://img.shields.io/hexpm/v/practical_elixir.svg)](https://hex.pm/packages/practical_elixir) 
+ 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
