@@ -6,6 +6,7 @@ defmodule StringConverter do
   @doc """
     convert string to proper type  [integer | float | string]
 
+  ## Examples
     iex> StringConverter.to_type("34")
     34
     iex> StringConverter.to_type(".3f")
@@ -23,6 +24,7 @@ defmodule StringConverter do
   @doc """
     convert string to integer
 
+  ## Examples
     iex> StringConverter.to_integer("-25")
     -25
     iex> StringConverter.to_integer("2.4")
@@ -50,6 +52,7 @@ defmodule StringConverter do
   @doc """
     convert string to float
 
+  ## Examples
     iex> StringConverter.to_float("0.3f")
     0.f
     iex> StringConverter.to_float("3x")
