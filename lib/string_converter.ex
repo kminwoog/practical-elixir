@@ -54,7 +54,7 @@ defmodule StringConverter do
 
   ## Examples
     iex> StringConverter.to_float("0.3f")
-    0.f
+    0.3
     iex> StringConverter.to_float("3x")
     :error
   """
