@@ -24,3 +24,4 @@ practical_elixir-*.tar
 
 
 /.elixir_ls/
+/bench/snapshots/
